@@ -1,0 +1,11 @@
+Write a console application 
+A)that accepts 10 numbers in to the array and displays the sum of all the 
+entered numbers
+B)that accepts up to 10 numbers and display them in decreasing order
+C)that accepts up to 10 numbers and finds the greatest number and 
+lowest number
+D)that accepts up to 10 numbers and finds average of all the numbers in 
+the given integer array
+E) that accepts up to 10 numbers and finds number of even numbers and 
+odd numbers
+F)that finds missing numbers from 0-9 in the given integer array
