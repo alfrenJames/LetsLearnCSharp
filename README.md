@@ -1,6 +1,6 @@
 # LetsLearnCSharp
 
-###Learning C# from Scratch
+### Learning C# from Scratch
 Welcome to the "Learning C# from Scratch" repository! This repository aims to provide a comprehensive resource for beginners who are interested in learning the C# programming language. Whether you are completely new to programming or have experience in other languages, this repository will guide you through the fundamentals of C# and help you build a strong foundation.
 
 ###Contents
