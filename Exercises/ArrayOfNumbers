@@ -10,6 +10,7 @@ namespace ArrayOfNumbers
     {
         static void Main(string[] args)
         {
+        //Read Inputs of User
             Console.WriteLine("Requirement no. 1");
             Console.WriteLine("Enter First Array: ");
             int input1 = Convert.ToInt32(Console.ReadLine());
@@ -31,31 +32,33 @@ namespace ArrayOfNumbers
             int input9 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter Tenth Array: ");
             int input10 = Convert.ToInt32(Console.ReadLine());
+            //Input of User will be stored in an array of numbers
             int[] arr = new int[10] {input1, input2, input3, input4, input5,
                 input6, input7, input8, input9, input10};
-            //print sum
+            //print sum of array
             int sum = arr.Sum();
             Console.WriteLine("Sum of Array: " + sum);
-            //dec order
+            //print array desc order
             Console.WriteLine("Array in Descending Order");
             int [] revArr = arr;
             Array.Reverse(revArr);
             Array.ForEach(revArr, element => Console.WriteLine(element));
-            //find max and min
+            //find max and min element 
             Console.WriteLine("Greatest and Lowest Number");
             int min = arr.Min();
             int max = arr.Max();
             Console.WriteLine("Max: " + max + "Min: " + min);
-            //get the average
+            //get the average of array
             double ave = arr.Average();
             Console.WriteLine("Average of Array: " + ave);
-            //check even and odd
+            //check if element of array of numbers is odd or even 
             foreach (var element in arr)
             {
+                //ternary operator represent if else statement
                 string check = (element % 2 == 0) ? element + " Even Number" : element + " Odd Number";
                 Console.WriteLine(check);
             }
-            //find missing numbers 
+            //find missing numbers 0-9 base on user input 
             int[] missingarr = new int[] { };
             missingarr = Enumerable.Range(0, 9).Except(arr).ToArray();
             Console.WriteLine("Missing Numbers in 0-9");
