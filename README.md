@@ -16,7 +16,6 @@ This repository contains the following resources:
 
 5. Documentation: Detailed documentation that explains the syntax, features, and functionalities of the C# language. This documentation acts as a reliable reference as you progress through your learning journey.
 
-Contributing: Information on how you can contribute to this repository. We welcome contributions from the community to make this resource even more valuable for learners.
 
 If you have any questions or encounter any issues, feel free to open an issue on the repository. Our community members will be happy to assist you.
 
