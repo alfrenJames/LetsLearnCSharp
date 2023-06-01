@@ -1,0 +1,1 @@
+Detailed documentation that explains the syntax, features, and functionalities of the C# language. This documentation acts as a reliable reference as you progress through your learning journey.
