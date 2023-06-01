@@ -1,0 +1,66 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ArrayOfNumbers
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Requirement no. 1");
+            Console.WriteLine("Enter First Array: ");
+            int input1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Second Array: ");
+            int input2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Third Array: ");
+            int input3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Fourth Array: ");
+            int input4 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Fifth Array: ");
+            int input5 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Sixth Array: ");
+            int input6 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Seventh Array: ");
+            int input7 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Eighth Array: ");
+            int input8 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Ninth Array: ");
+            int input9 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Tenth Array: ");
+            int input10 = Convert.ToInt32(Console.ReadLine());
+            int[] arr = new int[10] {input1, input2, input3, input4, input5,
+                input6, input7, input8, input9, input10};
+            //print sum
+            int sum = arr.Sum();
+            Console.WriteLine("Sum of Array: " + sum);
+            //dec order
+            Console.WriteLine("Array in Descending Order");
+            int [] revArr = arr;
+            Array.Reverse(revArr);
+            Array.ForEach(revArr, element => Console.WriteLine(element));
+            //find max and min
+            Console.WriteLine("Greatest and Lowest Number");
+            int min = arr.Min();
+            int max = arr.Max();
+            Console.WriteLine("Max: " + max + "Min: " + min);
+            //get the average
+            double ave = arr.Average();
+            Console.WriteLine("Average of Array: " + ave);
+            //check even and odd
+            foreach (var element in arr)
+            {
+                string check = (element % 2 == 0) ? element + " Even Number" : element + " Odd Number";
+                Console.WriteLine(check);
+            }
+            //find missing numbers 
+            int[] missingarr = new int[] { };
+            missingarr = Enumerable.Range(0, 9).Except(arr).ToArray();
+            Console.WriteLine("Missing Numbers in 0-9");
+            Array.ForEach(missingarr, index => Console.Write(index + " "));
+            Console.ReadKey();
+        }
+    }
+}
